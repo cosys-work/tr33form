@@ -1,0 +1,38 @@
+<div class="main" nz-row nzAlign="bottom" nzJustify="center">
+
+  <nz-page-header class="site-page-header"
+                  nzBackIcon
+  >
+    <nz-page-header-title (click)="togglr.toggleCollapsed($event)">Love Plan</nz-page-header-title>
+    <nz-page-header-subtitle>
+      <nz-breadcrumb>
+        <nz-breadcrumb-item>Design</nz-breadcrumb-item>
+        <nz-breadcrumb-item>
+          <a href="#">Composition</a>
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item [nzOverlay]="menu">
+          <a href="#">Applications</a>
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item>Do Be Do Be Do Be</nz-breadcrumb-item>
+      </nz-breadcrumb>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>General</li>
+          <li nz-menu-item>Layout</li>
+          <li nz-menu-item>Navigation</li>
+        </ul>
+      </nz-dropdown-menu>
+    </nz-page-header-subtitle>
+    <nz-page-header-extra>
+      <cosys-graph-toolbox></cosys-graph-toolbox>
+    </nz-page-header-extra>
+    <nz-page-header-content>
+      <div class="content">
+        <div class="main">
+          <nz-descriptions nzSize="small" [nzColumn]="2">
+          </nz-descriptions>
+        </div>
+      </div>
+    </nz-page-header-content>
+  </nz-page-header>
+</div>

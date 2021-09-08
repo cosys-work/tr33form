@@ -1,0 +1,32 @@
+{
+  "name": "@cosys/func",
+  "version": "0.2.9",
+  "description": "Monad, Monadic Hypergraph, monadic, applicative, functorial laws, groupoid, magma, monoid...",
+  "main": "src/index.ts",
+  "scripts": {
+    "pubdate": "pnpm publish . --tag latest --access public --publish-branch main"
+  },
+  "dependencies": {
+    "@codewithdan/observable-store": "^2.2.12",
+    "rxjs": "^7.3.0",
+    "tslib": "^2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosys-work/tr33ngl.git"
+  },
+  "keywords": [
+    "nominative-monads",
+    "naked-functors",
+    "runtime-type-check-on-demand"
+  ],
+  "author": "Risav Karna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cosys-work/tr33ngl/issues"
+  },
+  "homepage": "https://github.com/cosys-work/tr33ngl#readme",
+  "directories": {
+    "doc": "docs"
+  }
+}

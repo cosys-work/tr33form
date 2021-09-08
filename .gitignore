@@ -1,0 +1,49 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+/nodes/containers/dist/
+/oss/vm/.vagrant/
+/**/.pnpm-debug.log
+/chrome-tome/
+/libs/func/docs/build/
+/libs/func/node_modules/
+/libs/graph-init-term/node_modules/
+/libs/func/dist/
+/apps/tr33ngl/src/assets/vis/
+nodes/containers/scripts/leofs/leofs_1.4.3-1_ubuntu-18.04_amd64.deb

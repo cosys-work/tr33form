@@ -1,0 +1,56 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+            nzCollapsible
+            nzWidth="256px"
+            nzBreakpoint="md"
+            [(nzCollapsed)]="togglr.isColPSD"
+            >
+    <div class="sidebar-logo">
+      <a href="#">
+        <mat-icon>ac_unit</mat-icon> <h1>Project Tr33ngl</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="togglr.isColPSD">
+      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="init">Time Scape</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="grid">Grid Space</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="gra/f">Play Grounds</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Schema" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="gra/force">Schemas</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Symbols</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="key-val">Synonyms</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <cosys-graf-header></cosys-graf-header>
+      </div>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
+
+

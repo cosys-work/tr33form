@@ -1,0 +1,32 @@
+:host {
+  display: block;
+}
+
+.main {
+  padding-top: 25px;
+}
+
+#myNetwork {
+  width: 700px;
+  height: 350px;
+}
+
+#vertDiv {
+  transform: translate(50%, 50%) rotate(90deg);
+}
+
+#reflected {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.network {
+  width: 700px;
+  height: 350px;
+}
+
+* {
+  text-align: center;
+  font-family: Sans-serif, serif;
+}
+
+
